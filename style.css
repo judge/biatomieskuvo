@@ -15,21 +15,9 @@ body {
   line-height: 1;
   margin: 0;
 }
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-li {
-  display: block;
-}
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: inherit;
@@ -42,12 +30,6 @@ p {
 }
 strong {
   font-weight: 700;
-}
-img {
-  border: 0;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
 }
 a,
 a:focus,
@@ -85,7 +67,8 @@ section {
 
 article {
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
+  margin: 0 1em;
   z-index: 1;
 }
 
@@ -220,30 +203,32 @@ h3 {
 }
 
 .scroll {
-  position: absolute; 
-  height: 100%;
+  bottom: 80px;
   left: 0;
-  right: 0;
   margin: auto;
-  width: 40px;
+  position: absolute;
+  right: 0;
+  width: 30px;
 }
 
 .scroll-indicator { 
+  width: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
   position: absolute;
-  left: 50%;
-  font-size: 50px;
   -webkit-animation: bounce 1s infinite; 
   animation: bounce 1s infinite;
 }
 
 @-webkit-keyframes bounce {
-   0% { top: 18%; }
-   50%   { top: 20%; }
-   100% { top: 18%; }
+   0% { top: 10px; }
+   50%   { top: 20px; }
+   100% { top: 10px; }
 }
 
 @keyframes bounce {
-   0% { top: 18%; }
-   50%   { top: 20%; }
-   100% { top: 18%; }
+   0% { top: 10px; }
+   50%   { top: 20px; }
+   100% { top: 10px; }
 }
